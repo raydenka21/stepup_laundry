@@ -1,0 +1,7 @@
+@media only screen and (min-width: 425px) {
+    #page,#footer-bar,.header,.page-title {
+        width: 425px !important;
+        margin: 10px auto 0 auto !important;
+
+    }
+}
