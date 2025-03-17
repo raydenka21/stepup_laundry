@@ -90,8 +90,7 @@
                 <i class="fa fa-check disabled valid color-green-dark"></i>
                 <em>(required)</em>
             </div>
-            <p class="font-11 opacity-70 font-italic line-height-s"><strong class="color-highlight">Note</strong>. Free Pickup & Delivery Service Area<br>(Weekday) Mampang, Kemang, Bagka, Pejaten, Buncit Ampera, Tendean, Cipete, Ciganjur, Jagakarsa.<i class="fa fa-check-circle color-green-dark ps-1 pe-1"></i><br> (Weekend) Ciganjur, Jagakarsa, Cilandak. <i class="fa fa-check-circle color-green-dark ps-1 pe-1"></i></p>
-
+            @include('components.free-pickup')
             <div class="pb-3"></div>
             <a href="#" class="btn btn-full btn-m rounded-sm font-13 font-600 gradient-highlight mb-4"
                onclick="sendForm()">Booking</a>
