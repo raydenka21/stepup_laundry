@@ -1,5 +1,13 @@
 <div class="card card-style">
     <div class="content mb-0">
+        <div id="timed-2"
+             class="menu menu-box-modal rounded-m"
+             data-menu-hide="1000"
+             data-menu-width="220"
+             data-menu-height="160">
+            <h1 class="text-center fa-5x mt-2 pt-3 pb-2"><i class="fa fa-times-circle color-red-dark"></i></h1>
+            <h2 id="message" class="text-center">Task Failed</h2>
+        </div>
 
 
         <form action="#" id="booking_form">
@@ -69,11 +77,11 @@
                 <i class="fa fa-check disabled valid color-green-dark"></i>
                 <em>(required)</em>
             </div>
-<!--            <div class="input-style input-style-always-active no-borders has-icon validate-field mb-4">-->
-<!--                <i class="fa fa-calendar color-highlight"></i>-->
-<!--                <input type="date" class="form-control" name="date" value="{{date('Y-m-d')}}" autocomplete="off" id="input-date"  min="{{date('Y-m-d')}}">-->
-<!--                <label for="input-address" class="color-highlight text-uppercase font-700 font-10">Date</label>-->
-<!--            </div>-->
+            <!--            <div class="input-style input-style-always-active no-borders has-icon validate-field mb-4">-->
+            <!--                <i class="fa fa-calendar color-highlight"></i>-->
+            <!--                <input type="date" class="form-control" name="date" value="{{date('Y-m-d')}}" autocomplete="off" id="input-date"  min="{{date('Y-m-d')}}">-->
+            <!--                <label for="input-address" class="color-highlight text-uppercase font-700 font-10">Date</label>-->
+            <!--            </div>-->
             <div class="input-style input-style-always-active no-borders has-icon validate-field mb-4">
                 <i class="fa fa-home color-highlight"></i>
                 <textarea id="input-address" name="address" autocomplete="off"></textarea>
@@ -91,7 +99,13 @@
     </div>
 </div>
 
+
+
 <script>
+    function timeoutMessage() {
+        $("#timed-2").removeClass( "menu-active" );
+    }
+
     function sendForm() {
         var formRequest = $("#booking_form").serialize();
         console.log(formRequest);
@@ -101,12 +115,21 @@
             url: "{{ route('booking.create').'?_token='.csrf_token() }}",
             data: formRequest,
             success: function (response) {
+                console.log(response);
                 if(response.status == 'success'){
                     window.location.href = response.data;
+                }else{
+                    $("#timed-2").addClass( "menu-active" );
+
+                    $('#message').text(response.message);
+                    setTimeout(timeoutMessage, 1000);
                 }
                 return false;
             },
             error: function (data) {
+                console.log('aaa');
+                $("#timed-2").addClass( "menu-active" );
+
                 console.log(data);
                 return false;
             }
