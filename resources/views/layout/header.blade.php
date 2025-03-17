@@ -7,13 +7,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <title>Stepup Laundry - Premium Care</title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('styles/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/bootstrap.css') }}" media="all" />
     <link rel="stylesheet" type="text/css" href="{{ asset('styles/style.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('styles/custom.css') }}">
-    <script src="{{ asset('jquery/jquery.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('custom.css') }}">
+    <script src="{{ asset('jquery/jquery-3.7.1.min.js') }}"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('fonts/css/fontawesome-all.min.css')}}">
     <link rel="manifest" href="_manifest.json">
+    <script src="/_service-worker.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
 
     <link rel="apple-touch-icon" sizes="192x192" href="images/logo.png">

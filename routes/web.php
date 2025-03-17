@@ -3,10 +3,12 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ServiceController;
 
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/service', [ServiceController::class, 'index'])->name('service');
 Route::get('/booking', [BookingController::class, 'index'])->name('booking');
 Route::post('/booking/create', [BookingController::class, 'create'])->name('booking.create');
 Route::get('/menu-navbar', [MenuController::class, 'navbar'])->name('layout.menu-navbar');

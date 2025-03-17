@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Contracts\View\View;
 
-class HomeController extends Controller
+class ServiceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class HomeController extends Controller
     public function index() : View
     {
         $data = [
-            'page' => 'home',
+            'page' => 'service',
         ];
         return view('layout.wrapper', $data);
         //

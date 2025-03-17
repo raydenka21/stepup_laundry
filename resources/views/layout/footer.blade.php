@@ -43,7 +43,7 @@
 <!-- Be sure this is on your main visiting page, for example, the index.html page-->
 <!-- Install Prompt for Android -->
 <div id="menu-install-pwa-android" class="menu menu-box-bottom rounded-m">
-    <img class="mx-auto mt-4 rounded-m" src="images/logo.svg" alt="img" width="90">
+    <img class="mx-auto mt-4 rounded-m" src="{{asset('images/logo.png')}}" alt="img" width="90">
     <h4 class="text-center mt-4 mb-2">Appkit on your Home Screen</h4>
     <p class="text-center boxed-text-xl">
         Install Appkit on your home screen, and access it just like a regular app. It really is that simple!
@@ -57,10 +57,10 @@
 <!-- Install instructions for iOS -->
 <div id="menu-install-pwa-ios" class="menu menu-box-bottom rounded-m">
     <div class="boxed-text-xl top-25">
-        <img class="mx-auto mt-4 rounded-m" src="images/logo.svg" alt="img" width="90">
-        <h4 class="text-center mt-4 mb-2">Appkit on your Home Screen</h4>
+        <img class="mx-auto mt-4 rounded-m" src="{{asset('images/logo.png')}}" alt="img" width="90">
+        <h4 class="text-center mt-4 mb-2">Step Laundry on your Home Screen</h4>
         <p class="text-center ms-3 me-3">
-            Install Appkit on your home screen, and access it just like a regular app. Open your Safari menu and tap "Add to Home Screen".
+            Install Step Laundry on your home screen, and access it just like a regular app. Open your Safari menu and tap "Add to Home Screen".
         </p>
         <a href="#" class="pwa-dismiss close-menu btn-full mt-3 text-center text-uppercase font-700 color-red-light opacity-90 font-110 pb-5">Maybe later</a>
     </div>
@@ -68,7 +68,7 @@
 
 </div>
 
-<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="{{ asset('scripts/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('scripts/custom.js') }}"></script>
 </body>
 </html>

@@ -11,38 +11,38 @@
 </div>
 <div class="mt-4"></div>
 <h6 class="menu-divider">Library</h6>
-<div class="list-group list-custom-small list-menu">
-    <a id="nav-welcome" href="index.html">
-        <i class="fa fa-heart gradient-red color-white"></i>
-        <span>Welcome</span>
-        <i class="fa fa-angle-right"></i>
-    </a>
-    <a id="nav-homepages" href="index-homepages.html">
-        <i class="fa fa-home gradient-green color-white"></i>
-        <span>Homepages</span>
-        <i class="fa fa-angle-right"></i>
-    </a>
-    <a id="nav-components" href="index-components.html">
-        <i class="fa fa-cog gradient-blue color-white"></i>
-        <span>Components</span>
-        <i class="fa fa-angle-right"></i>
-    </a>
-    <a id="nav-pages" href="index-pages.html">
-        <i class="fa fa-file gradient-brown color-white"></i>
-        <span>Pages</span>
-        <i class="fa fa-angle-right"></i>
-    </a>
-    <a id="nav-media" href="index-projects.html">
-        <i class="fa fa-camera gradient-magenta color-white"></i>
-        <span>Media</span>
-        <i class="fa fa-angle-right"></i>
-    </a>
-    <a id="nav-contact" href="page-contact.html">
-        <i class="fa fa-envelope gradient-teal color-white"></i>
-        <span>Contact</span>
-        <i class="fa fa-angle-right"></i>
-    </a>
-</div>
+<!--<div class="list-group list-custom-small list-menu">-->
+<!--    <a id="nav-welcome" href="index.html">-->
+<!--        <i class="fa fa-heart gradient-red color-white"></i>-->
+<!--        <span>Welcome</span>-->
+<!--        <i class="fa fa-angle-right"></i>-->
+<!--    </a>-->
+<!--    <a id="nav-homepages" href="index-homepages.html">-->
+<!--        <i class="fa fa-home gradient-green color-white"></i>-->
+<!--        <span>Homepages</span>-->
+<!--        <i class="fa fa-angle-right"></i>-->
+<!--    </a>-->
+<!--    <a id="nav-components" href="index-components.html">-->
+<!--        <i class="fa fa-cog gradient-blue color-white"></i>-->
+<!--        <span>Components</span>-->
+<!--        <i class="fa fa-angle-right"></i>-->
+<!--    </a>-->
+<!--    <a id="nav-pages" href="index-pages.html">-->
+<!--        <i class="fa fa-file gradient-brown color-white"></i>-->
+<!--        <span>Pages</span>-->
+<!--        <i class="fa fa-angle-right"></i>-->
+<!--    </a>-->
+<!--    <a id="nav-media" href="index-projects.html">-->
+<!--        <i class="fa fa-camera gradient-magenta color-white"></i>-->
+<!--        <span>Media</span>-->
+<!--        <i class="fa fa-angle-right"></i>-->
+<!--    </a>-->
+<!--    <a id="nav-contact" href="page-contact.html">-->
+<!--        <i class="fa fa-envelope gradient-teal color-white"></i>-->
+<!--        <span>Contact</span>-->
+<!--        <i class="fa fa-angle-right"></i>-->
+<!--    </a>-->
+<!--</div>-->
 <h6 class="menu-divider mt-4">Settings</h6>
 <div class="list-group list-custom-small list-menu">
     <a href="#" data-menu="menu-colors">

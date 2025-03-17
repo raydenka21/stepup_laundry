@@ -6,7 +6,7 @@
 
 <div class="header header-auto-show header-fixed header-logo-center">
 
-    <a href="index.html" class="header-title">Stepup Laundry</a>
+    <a href="{{ route('home') }}" class="header-title">Stepup Laundry</a>
 
 <!--    <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>-->
     <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i class="fas fa-sun"></i></a>
@@ -17,10 +17,11 @@
 
 <div id="footer-bar" class="footer-bar-6">
 
+
     <a href="#" data-toast="snackbar-coming-soon-small" onclick="counterFeature('blog')"><i class="fa fa-book"></i><span>Blog</span></a>
     <a href="#" data-toast="snackbar-coming-soon-small" onclick="counterFeature('transaction')"><i class="fa fa-list"></i><span>Transaction</span></a>
-    <a href="{{ route('home') }}" class="circle-nav active-nav" onclick="counterFeature('home')"><i class="fa fa-home"></i><span>Home</span></a>
-    <a href="#" data-toast="snackbar-coming-soon-small" onclick="counterFeature('promo')"><i class="fa fa-percent"></i><span>Promo</span></a>
+    <a href="{{ route('home') }}" class="circle-nav @if(Route::current()->getName() == 'home') active-nav @endif" onclick="counterFeature('home')"><i class="fa fa-home"></i><span>Home</span></a>
+    <a href="{{ route('service') }}"  class="@if(Route::current()->getName() == 'service') active-nav @endif" onclick="counterFeature('service')"><i class="fa fa-box-open"></i><span>Service</span></a>
     <a href="#" data-toast="snackbar-coming-soon-small" onclick="counterFeature('user')"><i class="fa fa-user"></i><span>Account</span></a>
 
 
