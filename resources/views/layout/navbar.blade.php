@@ -21,7 +21,7 @@
     <a href="#" data-toast="snackbar-coming-soon-small" onclick="counterFeature('blog')"><i class="fa fa-book"></i><span>Blog</span></a>
     <a href="#" data-toast="snackbar-coming-soon-small" onclick="counterFeature('transaction')"><i class="fa fa-list"></i><span>Transaction</span></a>
     <a href="{{ route('home') }}" class="circle-nav @if(Route::current()->getName() == 'home') active-nav @endif" onclick="counterFeature('home')"><i class="fa fa-home"></i><span>Home</span></a>
-    <a href="{{ route('service') }}"  class="@if(Route::current()->getName() == 'service') active-nav @endif" onclick="counterFeature('service')"><i class="fa fa-box-open"></i><span>Service</span></a>
+    <a href="{{ route('service') }}"  class="@if(Route::current()->getName() == 'service' || 'booking') active-nav @endif" onclick="counterFeature('service')"><i class="fa fa-box-open"></i><span>Service</span></a>
     <a href="#" data-toast="snackbar-coming-soon-small" onclick="counterFeature('user')"><i class="fa fa-user"></i><span>Account</span></a>
 
 
