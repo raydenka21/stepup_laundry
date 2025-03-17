@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Global Variables
     let isPWA = true;  // Enables or disables the service worker and PWA
     let isAJAX = true; // AJAX transitions. Requires local server or server
-    var pwaName = "Appkit"; //Local Storage Names for PWA
+    var pwaName = "Stepup Laundry"; //Local Storage Names for PWA
     var pwaRemind = 1; //Days to re-remind to add to home
     var pwaNoCache = false; //Requires server and HTTPS/SSL. Will clear cache with each visit
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //Attaching Menu Hider
         var menuHider = document.getElementsByClassName('menu-hider');
         if(!menuHider.length){var hider = document.createElement('div'); hider.setAttribute("class", "menu-hider");document.body.insertAdjacentElement('beforebegin', hider);}
-		// setTimeout(function() {if(document.querySelectorAll('.menu-hider')[0].classList.remove('menu-active').classList.contains('menu-active')){document.querySelectorAll('.menu-hider')[0].classList.remove('menu-active').classList.remove('menu-active');}}, 50);
+		setTimeout(function() {if(document.querySelectorAll('.menu-hider')[0].classList.remove('menu-active').classList.contains('menu-active')){document.querySelectorAll('.menu-hider')[0].classList.remove('menu-active').classList.remove('menu-active');}}, 50);
 
         //Demo function for programtic creation of Menu
         //menu('menu-settings', 'show', 250);
@@ -338,13 +338,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         menuFunction();
 
-        // function activateMenus(){
-        //     const menuActive = document.querySelectorAll('[data-menu-active]')[0];
-        //     if(menuActive){
-        //         var selectedMenu = menuActive.getAttribute('data-menu-active');
-        //         document.querySelectorAll('#'+selectedMenu)[0].classList.add('active-nav');
-        //     }
-        // }
+        function activateMenus(){
+            const menuActive = document.querySelectorAll('[data-menu-active]')[0];
+            if(menuActive){
+                var selectedMenu = menuActive.getAttribute('data-menu-active');
+                document.querySelectorAll('#'+selectedMenu)[0].classList.add('active-nav');
+            }
+        }
 
         //Back Button
         const backButton = document.querySelectorAll('[data-back-button]');
@@ -1253,7 +1253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if(dataMenuLoad[dataMenuLoad.length-1] === e){
                         menuFunction();
                         checkDarkMode();
-                        // activateMenus();
+                        activateMenus();
                         shareLinks();
                         highlightColors();
                         selectHighlight();
